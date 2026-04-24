@@ -10,7 +10,7 @@ body {
 .navbar-brand {
     font-style:italic;
     font-size: 24px;
-    color: #ffffffd0 !important;
+    color: #07c5ff !important;
     letter-spacing: 1px;
 }
 
@@ -38,7 +38,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(57, 56, 56, 0.5); /* tingkat gelap */
+    background: rgba(1, 142, 198, 0.397); /* tingkat gelap */
 }
 .hero .container {
     position: relative;
