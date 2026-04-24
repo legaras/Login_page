@@ -38,7 +38,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(1, 142, 198, 0.397); /* tingkat gelap */
+    background: rgba(1, 142, 198, 0.299); /* tingkat gelap */
 }
 .hero .container {
     position: relative;
