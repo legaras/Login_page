@@ -2,74 +2,66 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informasi Harga Sound System & Lighting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Extreme'D Sound & Lighting</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <img src="LogoNavbar.jpg" alt="" width="40" height="30" class="d-inline-block align-text-top">Extreme'D Audio
-    </a>
-    <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="search" aria-label="search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            <img src="LogoNavbar.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+            Extreme'D Audio
+        </a>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="search" aria-label="search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
 </nav>
 
-<!-- Hero Section -->
-<section class="hero text-center text-white d-flex align-items-center">
-    <div class="container">
-        <h1 class="display-4 fw-bold">Sound System & Lighting Profesional</h1>
-        <p class="lead">Solusi terbaik untuk event, konser, wedding, dan acara lainnya</p>
+<!-- Hero -->
+<section class="hero text-white d-flex align-items-center">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">Sound System & Lighting</h1>
+        <p class="lead">Solusi terbaik untuk event Anda</p>
+        <button class="btn btn-primary" onclick="scrollToPricing()">Lihat Harga</button>
     </div>
 </section>
 
-<!-- Paket Harga -->
-<section class="py-5">
+<!-- Paket -->
+<section id="pricing" class="py-5">
     <div class="container">
-        <h2 class="text-center mb-4">Paket Harga</h2>
+        <h2 class="text-center mb-4">Daftar Paket</h2>
         <div class="row">
 
             <!-- Paket 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card shadow">
                     <div class="card-body text-center">
-                        <h4 class="card-title">Basic Package</h4>
-                        <p class="price">Rp 1.500.000</p>
-                        <ul class="list-unstyled">
-                            <li>2 Speaker</li>
-                            <li>1 Mixer</li>
-                            <li>2 Mic</li>
-                            <li>Operator</li>
-                        </ul>
-                        <button class="btn btn-primary">Pesan Sekarang</button>
+                        <h5 class="card-title">Paket Basic</h5>
+                        <p>Sound kecil + lighting sederhana</p>
+                        <h3 class="text-primary">Rp 1.500.000</h3>
+                        <button class="btn btn-outline-primary" onclick="order('Basic')">Pesan</button>
                     </div>
                 </div>
             </div>
 
             <!-- Paket 2 -->
             <div class="col-md-4 mb-4">
-                <div class="card shadow border-primary">
+                <div class="card shadow">
                     <div class="card-body text-center">
-                        <h4 class="card-title">Standard Package</h4>
-                        <p class="price">Rp 3.000.000</p>
-                        <ul class="list-unstyled">
-                            <li>4 Speaker</li>
-                            <li>Lighting Basic</li>
-                            <li>3 Mic</li>
-                            <li>Operator + Crew</li>
-                        </ul>
-                        <button class="btn btn-primary">Pesan Sekarang</button>
+                        <h5 class="card-title">Paket Medium</h5>
+                        <p>Sound medium + lighting panggung</p>
+                        <h3 class="text-primary">Rp 3.500.000</h3>
+                        <button class="btn btn-outline-primary" onclick="order('Medium')">Pesan</button>
                     </div>
                 </div>
             </div>
@@ -78,15 +70,10 @@
             <div class="col-md-4 mb-4">
                 <div class="card shadow">
                     <div class="card-body text-center">
-                        <h4 class="card-title">Premium Package</h4>
-                        <p class="price">Rp 6.000.000</p>
-                        <ul class="list-unstyled">
-                            <li>Full Sound System</li>
-                            <li>Lighting Pro</li>
-                            <li>LED & Effects</li>
-                            <li>Full Crew</li>
-                        </ul>
-                        <button class="btn btn-primary">Pesan Sekarang</button>
+                        <h5 class="card-title">Paket Pro</h5>
+                        <p>Full sound system + lighting konser</p>
+                        <h3 class="text-primary">Rp 7.000.000</h3>
+                        <button class="btn btn-outline-primary" onclick="order('Pro')">Pesan</button>
                     </div>
                 </div>
             </div>
@@ -95,18 +82,17 @@
     </div>
 </section>
 
-<!-- Informasi -->
-<section class="bg-light py-5">
-    <div class="container text-center">
-        <h2>Kenapa Pilih Kami?</h2>
-        <p>Kami menyediakan peralatan sound system dan lighting berkualitas tinggi untuk berbagai acara seperti konser, wedding, dan event perusahaan.</p>
-    </div>
+<!-- Kontak -->
+<section class="bg-dark text-white text-center py-4">
+    <p>Hubungi kami: 085162575611</p>
 </section>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2026 Extreme'D Sound System</p>
-</footer>
+<!-- Script -->
+<script>
+function scrollToPricing() {
+    document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
+}
+</script>
 
 </body>
 </html>

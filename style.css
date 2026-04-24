@@ -2,45 +2,52 @@ body {
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* Hero Section */
-.hero {
-    height: 80vh;
-    background: url('background.jpg') center/cover no-repeat;
+.navbar {
     position: relative;
+    z-index: 10;
 }
 
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000a1 !important;
+    letter-spacing: 1px;
+}
+
+/*Background */
+.hero {
+    height: 90vh;
+    background: url('background.jpg') no-repeat center center/cover;
+}
 .hero::before {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(57, 56, 56, 0.5); /* tingkat gelap */
 }
-
 .hero .container {
     position: relative;
     z-index: 2;
 }
 
-/* Harga */
-.price {
-    font-size: 28px;
-    font-weight: bold;
-    color: #007bff;
-}
-
 /* Card Hover */
-.card:hover {
-    transform: scale(1.05);
+.card {
     transition: 0.3s;
 }
 
-/* Button */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Button Style */
 .btn-primary {
-    background-color: #007bff;
+    background-color: #0066ab;
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #0b9bfa;
 }
